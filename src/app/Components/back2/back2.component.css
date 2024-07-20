@@ -1,6 +1,6 @@
 .back-button {
-    width: 2.4vw; /* Tamaño más pequeño */
-    height: 3.4vh; /* Tamaño más pequeño */
+    width: 1.18vw; /* Tamaño más pequeño */
+    height: 3.2vh; /* Tamaño más pequeño */
     background-color: #008B8B;
     border: none;
     color: white;
@@ -9,12 +9,43 @@
     border-radius: 5px;
     cursor: pointer;
     position: absolute;
-    top: 9px; /* Más arriba */
-    right: 9px; /* En la esquina derecha */
+    top: 0px; /* Ajustar para mover el botón más arriba */
+    right: 15px; /* Asegurar que esté a la derecha */
   }
   
   .back-button:hover {
     background-color: #00CED1; /* Color de fondo al pasar el cursor */
-    width: 2.6vw;
+    top: -1.4px;
+    width: 1.28vw;
     height: 3.5vh;
   }
+
+  /* Media query for smartphones */
+@media (max-width: 600px) {
+  .difficulty-selection {
+    height: 100%;
+    background-color: #fff; /* Remove background for mobile view */
+  }
+
+  .back-button {
+    width: 12.5%;
+    height: 124%;
+    background-color: #008B8B;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: -5px; /* Ajustar para mover el botón más arriba */
+    right: 10px; /* Asegurar que esté a la derecha */
+  }
+  
+  .back-button:hover {
+    background-color: #00CED1; /* Color de fondo al pasar el cursor */
+    top: -1.4px;
+    width: 1.68vw;
+    height: 3.5vh;
+  }
+}

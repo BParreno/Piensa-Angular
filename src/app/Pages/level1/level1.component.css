@@ -47,13 +47,6 @@
   margin-right: 5px;
 }
 
-/* Estilo del botón de regreso */
-.back2-button {
-  position: absolute;
-  top: -10px; /* Ajustar para mover el botón más arriba */
-  right: 10px; /* Asegurar que esté a la derecha */
-}
-
 /* Mitad superior de la tarjeta */
 .upper-half {
   height: 50%; /* Mitad superior */
@@ -84,7 +77,7 @@
   color: white; /* Cambiar el color del texto a blanco */
   text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000; /* Agregar borde negro */
   font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
-  position:static;
+  position: static;
 }
 
 /* Contenedor de los botones */
@@ -147,6 +140,15 @@ button:disabled {
     border-radius: 0;
     box-shadow: none;
     padding: 0; /* Quitar el padding para que las imágenes de fondo se ajusten mejor */
+  }
+
+  .header {
+    top: 18px; /* Ajustar la posición del encabezado para dispositivos móviles */
+  }
+
+  .heart {
+    width: 40px; /* Ajustar tamaño de los corazones */
+    height: 40px; /* Ajustar tamaño de los corazones */
   }
 
   .upper-half {
