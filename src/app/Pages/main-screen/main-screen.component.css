@@ -40,8 +40,9 @@ h1 {
 button {
   display: block;
   width: 100%;
-  padding: 12px; /* Aumentar padding para botones más grandes */
-  margin: 5px 0; /* Reducir margen entre botones */
+  height: 24%;
+  padding: 10px; /* Aumentar padding para botones más grandes */
+  margin: 8px 0; /* Reducir margen entre botones */
   font-size: 18px; /* Aumentar tamaño de la fuente en los botones */
   border: none;
   border-radius: 5px;
@@ -54,6 +55,8 @@ button {
 
 button:hover {
   background-color: #00CED1; /* Color de fondo al pasar el cursor */
+  transform: scale(1.06);
+  
 }
 
 /* Media query for smartphones */

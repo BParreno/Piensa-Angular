@@ -1,6 +1,6 @@
 .back-button {
-    width: 30px; /* Tamaño más pequeño */
-    height: 30px; /* Tamaño más pequeño */
+    width: 2.4vw; /* Tamaño más pequeño */
+    height: 3.4vh; /* Tamaño más pequeño */
     background-color: #008B8B;
     border: none;
     color: white;
@@ -9,7 +9,12 @@
     border-radius: 5px;
     cursor: pointer;
     position: absolute;
-    top: 10px; /* Más arriba */
-    right: 10px; /* En la esquina derecha */
+    top: 9px; /* Más arriba */
+    right: 9px; /* En la esquina derecha */
   }
   
+  .back-button:hover {
+    background-color: #00CED1; /* Color de fondo al pasar el cursor */
+    width: 2.6vw;
+    height: 3.5vh;
+  }

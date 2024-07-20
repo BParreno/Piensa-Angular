@@ -74,6 +74,7 @@ button {
 
 button:hover {
   background-color: #00CED1; /* Color de fondo al pasar el cursor */
+  transform: scale(1.06); /* Agrandar el botón al pasar el cursor */
 }
 
 /* Media query for smartphones */

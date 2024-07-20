@@ -78,27 +78,30 @@
 
 /* Estilo de la pregunta */
 .question {
-  margin-bottom: 10px; /* Ajustar margen inferior */
-  font-size: 18px;
+  width: 89%;
+  margin-bottom: 0px; /* Ajustar margen inferior */
+  font-size: 16px;
   color: white; /* Cambiar el color del texto a blanco */
   text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000; /* Agregar borde negro */
   font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
+  position:static;
 }
 
 /* Contenedor de los botones */
 .buttons-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 100%; /* Hacer que el contenedor de botones ocupe todo el ancho */
+  width: 80%; /* Hacer que el contenedor de botones ocupe todo el ancho */
+  align-items: center;
 }
 
 /* Estilo de los botones */
 button {
   width: 100%; /* Hacer que los botones ocupen todo el ancho */
+  height: 25%;
   padding: 12px; /* Aumentar padding para botones más grandes */
-  margin: 5px 0; /* Reducir margen entre botones */
-  font-size: 18px; /* Aumentar tamaño de la fuente en los botones */
+  margin: 8px 0; /* Reducir margen entre botones */
+  font-size: 18px; /* Tamaño de la fuente en los botones */
   border: none;
   border-radius: 5px;
   background-color: #00ced17c; /* Color de fondo nuevo */
@@ -106,10 +109,12 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
+  position: static;
 }
 
 button:hover {
   background-color: #00CED1; /* Color de fondo al pasar el cursor */
+  transform: scale(1.06);
 }
 
 /* Clase para el botón correcto */
