@@ -1,5 +1,33 @@
 <div class="level1">
-    <h1>Nivel 1</h1>
-    <!-- Contenido del nivel 1 -->
+  <!-- Contenedor principal que centra la tarjeta -->
+  <div class="card">
+    <!-- Encabezado que contiene los corazones y el botón de regreso -->
+    <div class="header">
+      <div class="hearts">
+        <!-- Iterar sobre un array para mostrar las imágenes de los corazones -->
+        <img *ngFor="let heart of [0, 1]; let i = index" [src]="getHeartImage(i)" class="heart">
+        <!-- Corazón adicional que es siempre 'empty-heart' -->
+        <img src="assets/empty-heart.png" class="heart">
+      </div>
+      <!-- Componente del botón de regreso -->
+      <app-back2 class="back2-button"></app-back2>
+    </div>
+    <!-- Mitad superior de la tarjeta -->
+    <div class="upper-half">
+      <!-- Contenido de la mitad superior (por ahora vacío) -->
+    </div>
+    <!-- Mitad inferior de la tarjeta -->
+    <div class="lower-half">
+      <div class="question">
+        <!-- Pregunta de la tarjeta -->
+        <p>Si el lado b mide 4 y el lado a mide 3, ¿cuánto mide la hipotenusa?</p>
+      </div>
+      <div class="buttons-container">
+        <!-- Botones con respuestas posibles -->
+        <button [ngClass]="getButtonClass(20)" (click)="selectAnswer(20)" [disabled]="disableButtons">20</button>
+        <button [ngClass]="getButtonClass(5)" (click)="selectAnswer(5)" [disabled]="disableButtons && selectedAnswer === correctAnswer">5</button>
+        <button [ngClass]="getButtonClass(2)" (click)="selectAnswer(2)" [disabled]="disableButtons">2</button>
+      </div>
+    </div>
   </div>
-  
+</div>
