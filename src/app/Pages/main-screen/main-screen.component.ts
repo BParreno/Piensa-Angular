@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { LogoComponent } from '../../Components/logo/logo.component';
 
 @Component({
   selector: 'app-main-screen',
   standalone: true,
-  imports: [],
+  imports: [LogoComponent],
   templateUrl: './main-screen.component.html',
   styleUrls: ['./main-screen.component.css']
 })
@@ -12,7 +13,6 @@ export class MainScreenComponent {
   constructor(private router: Router) {}
 
   loadGame() {
-    // Aquí puedes agregar la lógica para cargar el juego
     alert('Cargar Juego no está implementado aún.');
   }
 
@@ -21,12 +21,10 @@ export class MainScreenComponent {
   }
 
   showKeyConcepts() {
-    // Aquí puedes agregar la lógica para mostrar los conceptos clave
     alert('Conceptos Clave no está implementado aún.');
   }
 
   showCredits() {
-    // Aquí puedes agregar la lógica para mostrar los créditos
     alert('Créditos no está implementado aún.');
   }
 }

@@ -11,6 +11,10 @@
   max-width: 300px;
   height: 600px; /* El doble de alto que de ancho */
   padding: 20px;
+  background-image: url('/assets/Back1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -20,33 +24,36 @@
   position: relative;
 }
 
-.logo {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+h1 {
+  margin-top: -80px; /* Subir el texto más cerca del logo */
+  margin-bottom: 10px; /* Mantener la separación entre el texto y los botones */
+  font-size: 22px; /* Ajustar tamaño de la fuente */
+  color: #F9E08D; /* Cambiar el color del texto */
+  text-shadow: 3px 3px 0 #000, -3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000; /* Agregar borde negro más grueso */
+  font-family: 'Kumar One', cursive; /* Cambiar la fuente a Kumar One */
 }
 
-h1 {
-  margin-bottom: 20px;
-  font-size: 24px;
+.buttons-container {
+  margin-top: 60px; /* Bajar ligeramente los botones */
 }
 
 button {
   display: block;
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  font-size: 16px;
+  padding: 12px; /* Aumentar padding para botones más grandes */
+  margin: 5px 0; /* Reducir margen entre botones */
+  font-size: 18px; /* Aumentar tamaño de la fuente en los botones */
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #00ced17c; /* Color de fondo nuevo */
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #00CED1; /* Color de fondo al pasar el cursor */
 }
 
 /* Media query for smartphones */
@@ -70,10 +77,16 @@ button:hover {
   }
 
   h1 {
-    margin-top: 20px; /* Adjust for better spacing */
+    margin-top: -80px; /* Ajustar la posición del texto para dispositivos móviles */
+    margin-bottom: 10px; /* Mantener la separación entre el texto y los botones */
+  }
+
+  .buttons-container {
+    margin-top: 60px; /* Bajar ligeramente los botones */
   }
 
   button {
-    margin: 10px 0; /* Adjust for consistent spacing */
+    margin: 5px 0; /* Ajustar margen entre botones */
+    font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
   }
 }

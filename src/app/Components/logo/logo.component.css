@@ -1,0 +1,6 @@
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  max-height: 90%; /* Ajustar la altura máxima del logo */
+}

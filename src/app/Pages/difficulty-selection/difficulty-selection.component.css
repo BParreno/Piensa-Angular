@@ -11,6 +11,10 @@
   max-width: 300px;
   height: 600px; /* El doble de alto que de ancho */
   padding: 20px;
+  background-image: url('/assets/Back2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -39,6 +43,9 @@
 h2 {
   margin-top: 80px; /* Ajustar la altura del texto */
   font-size: 24px;
+  color: white; /* Cambiar el color del texto a blanco */
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000; /* Agregar borde negro */
+  font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
 }
 
 .difficulty-buttons {
@@ -58,14 +65,15 @@ button {
   font-size: 16px;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #00ced17c; /* Color de fondo nuevo */
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #00CED1; /* Color de fondo al pasar el cursor */
 }
 
 /* Media query for smartphones */
