@@ -44,8 +44,8 @@
   
   .back-button:hover {
     background-color: #00CED1; /* Color de fondo al pasar el cursor */
-    top: -1.4px;
-    width: 1.68vw;
-    height: 3.5vh;
+    top: -6px;
+    width: 13%;
+    height: 126%;
   }
 }

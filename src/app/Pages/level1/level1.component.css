@@ -143,7 +143,7 @@ button:disabled {
   }
 
   .header {
-    top: 18px; /* Ajustar la posición del encabezado para dispositivos móviles */
+    top: 16px; /* Ajustar la posición del encabezado para dispositivos móviles */
   }
 
   .heart {
