@@ -1,8 +1,10 @@
+/* Aplica el box-sizing border-box a todos los elementos, incluyendo los pseudoelementos ::before y ::after */
 * {
   box-sizing: border-box;
 }
 
+/* Estilo para el cuerpo del documento */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
+    margin: 0; /* Elimina el margen por defecto del cuerpo */
+    font-family: Arial, sans-serif; /* Establece la fuente Arial para el texto del cuerpo, con serif como alternativa */
+}

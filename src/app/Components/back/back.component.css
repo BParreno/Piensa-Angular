@@ -1,18 +1,20 @@
+/* Estilos para el botón de retroceso */
 .back-button {
-  width: 45px;
-  height: 45px;
+  width: 45px; /* Ancho del botón */
+  height: 45px; /* Altura del botón */
   background-color: #008B8B; /* Cambiar el color del botón de retroceso */
-  border: none;
-  color: white;
-  font-size: 18px;
-  padding: 0;
-  border-radius: 5px;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  left: 45%;
+  border: none; /* Sin borde */
+  color: white; /* Color del texto */
+  font-size: 18px; /* Tamaño de la fuente del texto */
+  padding: 0; /* Sin padding interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  position: absolute; /* Posición absoluta para colocarlo en la tarjeta */
+  top: 20px; /* Distancia desde la parte superior */
+  left: 45%; /* Distancia desde la izquierda */
 }
 
+/* Estilos para el botón de retroceso al pasar el cursor */
 .back-button:hover {
   background-color: #00CED1; /* Color de fondo al pasar el cursor */
   transform: scale(1.1); /* Agrandar el botón al pasar el cursor */

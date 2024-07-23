@@ -1,175 +1,175 @@
 /* Contenedor principal que centra la tarjeta */
 .level1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  display: flex; /* Usar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Altura completa de la ventana */
 }
 
 /* Estilo de la tarjeta */
 .card {
-  width: 100%;
-  max-width: 300px;
-  height: 600px; /* El doble de alto que de ancho */
-  padding: 0; /* Quitar el padding para que las imágenes de fondo se ajusten mejor */
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden; /* Asegurarse de que las imágenes no se desborden */
-  z-index: 2; /* Asegurarse de que la card está por encima del contenedor */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 300px; /* Ancho máximo de la tarjeta */
+  height: 600px; /* Altura de la tarjeta */
+  padding: 0; /* Sin relleno interno */
+  background-color: #fff; /* Color de fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la tarjeta */
+  text-align: center; /* Texto centrado */
+  display: flex; /* Usar flexbox para el contenido interno */
+  flex-direction: column; /* Disposición en columna */
+  position: relative; /* Posicionamiento relativo para controlar z-index */
+  overflow: hidden; /* Ocultar contenido desbordado */
+  z-index: 2; /* Asegurarse de que la tarjeta está por encima del fondo */
 }
 
 /* Encabezado que contiene los corazones y el botón de regreso */
 .header {
-  position: absolute;
-  top: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
+  position: absolute; /* Posicionamiento absoluto */
+  top: 10px; /* Espaciado desde arriba */
+  width: 100%; /* Ancho completo */
+  display: flex; /* Usar flexbox para el contenido interno */
+  justify-content: space-between; /* Espacio entre elementos */
+  align-items: center; /* Alineación vertical de los elementos */
+  padding: 0 10px; /* Espaciado interior */
 }
 
 /* Contenedor de los corazones */
 .hearts {
-  display: flex;
-  align-items: center;
+  display: flex; /* Usar flexbox */
+  align-items: center; /* Alineación vertical */
 }
 
 /* Estilo de las imágenes de los corazones */
 .heart {
-  width: 30px; /* Ajustar tamaño de los corazones */
-  height: 30px; /* Ajustar tamaño de los corazones */
-  margin-right: 5px;
+  width: 30px; /* Ancho de los corazones */
+  height: 30px; /* Altura de los corazones */
+  margin-right: 5px; /* Espaciado entre corazones */
 }
 
 /* Mitad superior de la tarjeta */
 .upper-half {
-  height: 50%; /* Mitad superior */
-  background-image: url('/assets/Level1-B2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 50%; /* Altura del 50% */
+  background-image: url('/assets/Level1-B2.png'); /* Imagen de fondo */
+  background-size: cover; /* Cubrir todo el área disponible */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* No repetir la imagen */
 }
 
 /* Mitad inferior de la tarjeta */
 .lower-half {
-  height: 50%; /* Mitad inferior */
-  background-image: url('/assets/Level1-B1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 50%; /* Altura del 50% */
+  background-image: url('/assets/Level1-B1.png'); /* Imagen de fondo */
+  background-size: cover; /* Cubrir todo el área disponible */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Disposición en columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
 }
 
 /* Estilo de la pregunta */
 .question {
-  width: 89%;
-  margin-bottom: 0px; /* Ajustar margen inferior */
-  font-size: 16px;
-  color: white; /* Cambiar el color del texto a blanco */
-  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000; /* Agregar borde negro */
-  font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
-  position: static;
+  width: 89%; /* Ancho del 89% */
+  margin-bottom: 0px; /* Sin margen inferior */
+  font-size: 16px; /* Tamaño de fuente */
+  color: white; /* Color de texto blanco */
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000; /* Sombra de texto para borde negro */
+  font-family: 'Merriweather', serif; /* Fuente Merriweather */
+  position: static; /* Posicionamiento estático */
 }
 
 /* Contenedor de los botones */
 .buttons-container {
-  display: flex;
-  flex-direction: column;
-  width: 80%; /* Hacer que el contenedor de botones ocupe todo el ancho */
-  align-items: center;
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Disposición en columna */
+  width: 80%; /* Ancho del 80% */
+  align-items: center; /* Centrar horizontalmente */
 }
 
 /* Estilo de los botones */
 button {
-  width: 100%; /* Hacer que los botones ocupen todo el ancho */
-  height: 25%;
-  padding: 12px; /* Aumentar padding para botones más grandes */
-  margin: 8px 0; /* Reducir margen entre botones */
-  font-size: 18px; /* Tamaño de la fuente en los botones */
-  border: none;
-  border-radius: 5px;
-  background-color: #00ced17c; /* Color de fondo nuevo */
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
-  position: static;
+  width: 100%; /* Ancho completo */
+  height: 25%; /* Altura del 25% */
+  padding: 12px; /* Espaciado interior */
+  margin: 8px 0; /* Margen vertical */
+  font-size: 18px; /* Tamaño de fuente */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #00ced17c; /* Color de fondo */
+  color: white; /* Color de texto blanco */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición para el cambio de color de fondo */
+  font-family: 'Merriweather', serif; /* Fuente Merriweather */
+  position: static; /* Posicionamiento estático */
 }
 
 button:hover {
   background-color: #00CED1; /* Color de fondo al pasar el cursor */
-  transform: scale(1.06);
+  transform: scale(1.06); /* Escalar botón al pasar el cursor */
 }
 
 /* Clase para el botón correcto */
 button.correct {
-  background-color: green !important;
+  background-color: green !important; /* Color de fondo verde */
 }
 
 /* Clase para el botón incorrecto */
 button.incorrect {
-  background-color: red !important;
+  background-color: red !important; /* Color de fondo rojo */
 }
 
 /* Estilo para botones deshabilitados */
 button:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
+  cursor: not-allowed; /* Cursor no permitido */
+  opacity: 0.6; /* Opacidad reducida */
 }
 
 /* Media query para smartphones */
 @media (max-width: 600px) {
   .level1 {
-    height: 100%;
-    background-color: #fff; /* Remove background for mobile view */
+    height: 100%; /* Altura completa de la ventana */
+    background-color: #fff; /* Color de fondo blanco */
   }
 
   .card {
-    width: 100%;
-    height: 100vh; /* Make card take up full height of screen */
-    max-width: none;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0; /* Quitar el padding para que las imágenes de fondo se ajusten mejor */
+    width: 100%; /* Ancho completo */
+    height: 100vh; /* Altura completa de la ventana */
+    max-width: none; /* Sin ancho máximo */
+    border-radius: 0; /* Sin bordes redondeados */
+    box-shadow: none; /* Sin sombra */
+    padding: 0; /* Sin relleno interior */
   }
 
   .header {
-    top: 16px; /* Ajustar la posición del encabezado para dispositivos móviles */
+    top: 16px; /* Ajustar la posición del encabezado */
   }
 
   .heart {
-    width: 40px; /* Ajustar tamaño de los corazones */
-    height: 40px; /* Ajustar tamaño de los corazones */
+    width: 40px; /* Ancho de los corazones */
+    height: 40px; /* Altura de los corazones */
   }
 
   .upper-half {
-    height: 50%; /* Mitad superior */
-    background-image: url('/assets/Level1-B2.png');
+    height: 50%; /* Altura del 50% */
+    background-image: url('/assets/Level1-B2.png'); /* Imagen de fondo */
   }
 
   .lower-half {
-    height: 50%; /* Mitad inferior */
-    background-image: url('/assets/Level1-B1.png');
+    height: 50%; /* Altura del 50% */
+    background-image: url('/assets/Level1-B1.png'); /* Imagen de fondo */
   }
 
   .question {
-    margin-bottom: 10px; /* Ajustar margen inferior */
+    margin-bottom: 10px; /* Margen inferior */
   }
 
   .buttons-container {
-    margin-top: 10px; /* Ajustar margen superior */
+    margin-top: 10px; /* Margen superior */
   }
 
   button {
-    margin: 5px 0; /* Ajustar margen entre botones */
+    margin: 5px 0; /* Margen vertical */
   }
 }

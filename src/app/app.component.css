@@ -1,11 +1,13 @@
+/* Estilo para el contenedor de los triángulos */
 .Triangles {
-    position: fixed;
-    width: 100% !important;
-    height: 100% !important;
-    z-index: -1; /* Asegúrate de que el fondo está detrás de todo */
+    position: fixed; /* Fija la posición para que el fondo se mantenga en su lugar al hacer scroll */
+    width: 100% !important; /* Asegura que el fondo cubra el 100% del ancho de la pantalla */
+    height: 100% !important; /* Asegura que el fondo cubra el 100% de la altura de la pantalla */
+    z-index: -1; /* Coloca el fondo detrás de todos los demás elementos */
 }
 
+/* Estilo para las tarjetas (cards) */
 .card {
-    z-index: 1; /* Asegúrate de que las cards están por encima del fondo */
-    position: relative; /* Necesario para que z-index funcione */
+    z-index: 1; /* Asegura que las tarjetas estén por encima del fondo */
+    position: relative; /* Necesario para que z-index funcione correctamente */
 }

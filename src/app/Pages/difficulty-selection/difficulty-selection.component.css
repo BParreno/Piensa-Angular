@@ -1,93 +1,93 @@
 .difficulty-selection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative; /* Asegurarse de que el contenedor tiene posición relativa */
-  z-index: 1; /* Asegurarse de que el contenedor está por encima del fondo */
+  display: flex; /* Utiliza flexbox para el diseño */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  position: relative; /* Asegura que el contenedor tenga posición relativa */
+  z-index: 1; /* Asegura que el contenedor esté por encima del fondo */
 }
 
 .card {
   width: 100%;
-  max-width: 300px;
+  max-width: 300px; /* Ancho máximo de la tarjeta */
   height: 600px; /* El doble de alto que de ancho */
-  padding: 20px;
-  background-image: url('/assets/Back2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 2; /* Asegurarse de que la card está por encima del contenedor */
+  padding: 20px; /* Espacio interior de la tarjeta */
+  background-image: url('/assets/Back2.png'); /* Imagen de fondo de la tarjeta */
+  background-size: cover; /* La imagen de fondo cubre toda la tarjeta */
+  background-position: center; /* La imagen de fondo se centra */
+  background-repeat: no-repeat; /* La imagen de fondo no se repite */
+  background-color: #fff; /* Color de fondo de la tarjeta */
+  border-radius: 10px; /* Bordes redondeados de la tarjeta */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+  text-align: center; /* Texto centrado dentro de la tarjeta */
+  display: flex; /* Utiliza flexbox para el diseño interno */
+  flex-direction: column; /* Los hijos de la tarjeta se organizan en columna */
+  position: relative; /* Asegura que la tarjeta tenga posición relativa */
+  z-index: 2; /* Asegura que la tarjeta esté por encima del contenedor */
 }
 
 h2 {
-  margin-top: 80px; /* Ajustar la altura del texto */
-  font-size: 24px;
-  color: white; /* Cambiar el color del texto a blanco */
-  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000; /* Agregar borde negro */
-  font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
+  margin-top: 80px; /* Ajusta la altura del texto */
+  font-size: 24px; /* Tamaño de la fuente del título */
+  color: white; /* Color del texto */
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000; /* Agrega borde negro */
+  font-family: 'Merriweather', serif; /* Cambia la fuente a Merriweather */
 }
 
 .difficulty-buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: auto;
-  margin-bottom: auto;
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: column; /* Los botones se organizan en columna */
+  justify-content: center; /* Centra los botones verticalmente */
+  align-items: center; /* Centra los botones horizontalmente */
+  gap: 10px; /* Espacio entre los botones */
+  margin-top: auto; /* Margen superior automático */
+  margin-bottom: auto; /* Margen inferior automático */
 }
 
 button {
   width: 100%;
-  max-width: 200px;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  background-color: #00ced17c; /* Color de fondo nuevo */
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
+  max-width: 200px; /* Ancho máximo de los botones */
+  padding: 10px; /* Espacio interior de los botones */
+  font-size: 16px; /* Tamaño de la fuente de los botones */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados de los botones */
+  background-color: #00ced17c; /* Color de fondo de los botones */
+  color: white; /* Color del texto de los botones */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  font-family: 'Merriweather', serif; /* Cambia la fuente a Merriweather */
 }
 
 button:hover {
   background-color: #00CED1; /* Color de fondo al pasar el cursor */
-  transform: scale(1.06); /* Agrandar el botón al pasar el cursor */
+  transform: scale(1.06); /* Agranda el botón al pasar el cursor */
 }
 
-/* Media query for smartphones */
+/* Media query para smartphones */
 @media (max-width: 600px) {
   .difficulty-selection {
     height: 100%;
-    background-color: #fff; /* Remove background for mobile view */
+    background-color: #fff; /* Elimina el fondo para vista móvil */
   }
 
   .card {
     width: 100%;
-    height: 100vh; /* Make card take up full height of screen */
-    max-width: none;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 20px;
+    height: 100vh; /* La tarjeta ocupa toda la altura de la pantalla */
+    max-width: none; /* Sin ancho máximo */
+    border-radius: 0; /* Bordes no redondeados */
+    box-shadow: none; /* Sin sombra */
+    padding: 20px; /* Espacio interior de la tarjeta */
   }
 
   .back-button {
-    top: 40px; /* Adjust for better visibility */
+    top: 40px; /* Ajusta la visibilidad del botón de retroceso */
   }
 
   h2 {
-    margin-top: 120px; /* Adjust for better spacing */
+    margin-top: 120px; /* Ajusta el espacio superior del título */
   }
 
   .difficulty-buttons {
-    margin-top: 60px; /* Adjust for better spacing */
+    margin-top: 60px; /* Ajusta el espacio superior de los botones */
   }
 }

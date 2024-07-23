@@ -1,29 +1,29 @@
 .main-screen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative; /* Asegurarse de que el contenedor tiene posición relativa */
-  z-index: 1; /* Asegurarse de que el contenedor está por encima del fondo */
+  display: flex; /* Utiliza Flexbox para centrar los elementos hijos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  height: 100vh; /* La altura de la pantalla completa */
+  position: relative; /* Asegura que el contenedor tenga posición relativa */
+  z-index: 1; /* Asegura que el contenedor esté por encima del fondo */
 }
 
 .card {
-  width: 100%;
-  max-width: 300px;
-  height: 600px; /* El doble de alto que de ancho */
-  padding: 20px;
-  background-image: url('/assets/Back1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 2; /* Asegurarse de que la card está por encima del contenedor */
+  width: 100%; /* La tarjeta ocupa el 100% del ancho del contenedor padre */
+  max-width: 300px; /* El ancho máximo de la tarjeta es 300px */
+  height: 600px; /* La altura de la tarjeta es el doble de su ancho máximo */
+  padding: 20px; /* Espaciado interno de 20px */
+  background-image: url('/assets/Back1.png'); /* Imagen de fondo de la tarjeta */
+  background-size: cover; /* La imagen de fondo cubre completamente la tarjeta */
+  background-position: center; /* La imagen de fondo está centrada */
+  background-repeat: no-repeat; /* La imagen de fondo no se repite */
+  background-color: #fff; /* Color de fondo blanco */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+  text-align: center; /* El texto dentro de la tarjeta está centrado */
+  display: flex; /* Utiliza Flexbox para los elementos hijos */
+  flex-direction: column; /* Los elementos hijos están dispuestos en columna */
+  position: relative; /* Necesario para que z-index funcione */
+  z-index: 2; /* Asegura que la tarjeta esté por encima del contenedor */
 }
 
 h1 {
@@ -40,45 +40,44 @@ h1 {
 }
 
 button {
-  display: block;
-  width: 100%;
-  height: 24%;
+  display: block; /* Los botones se muestran como bloques */
+  width: 100%; /* Los botones ocupan el 100% del ancho de su contenedor */
+  height: 24%; /* La altura de los botones es el 24% de su contenedor */
   padding: 10px; /* Aumentar padding para botones más grandes */
   margin: 8px 0; /* Reducir margen entre botones */
   font-size: 18px; /* Aumentar tamaño de la fuente en los botones */
-  border: none;
-  border-radius: 5px;
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
   background-color: #00ced17c; /* Color de fondo nuevo */
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  color: white; /* Color del texto blanco */
+  cursor: pointer; /* El cursor cambia a puntero al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
   font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
 }
 
 button:hover {
   background-color: #00CED1; /* Color de fondo al pasar el cursor */
-  transform: scale(1.06);
-  
+  transform: scale(1.06); /* Aumentar el tamaño del botón al pasar el cursor */
 }
 
-/* Media query for smartphones */
+/* Media query para smartphones */
 @media (max-width: 600px) {
   .main-screen {
-    height: 100%;
-    background-color: #fff; /* Remove background for mobile view */
+    height: 100%; /* La altura del contenedor es el 100% de la pantalla */
+    background-color: #fff; /* Quitar el fondo para la vista móvil */
   }
 
   .card {
-    width: 100%;
-    height: 100vh; /* Make card take up full height of screen */
-    max-width: none;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 20px;
+    width: 100%; /* La tarjeta ocupa el 100% del ancho del contenedor */
+    height: 100vh; /* La tarjeta ocupa toda la altura de la pantalla */
+    max-width: none; /* Sin ancho máximo */
+    border-radius: 0; /* Sin esquinas redondeadas */
+    box-shadow: none; /* Sin sombra */
+    padding: 20px; /* Espaciado interno de 20px */
   }
 
   .logo {
-    margin-top: 40px; /* Adjust for better spacing */
+    margin-top: 40px; /* Ajustar el espacio superior */
   }
 
   h1 {
@@ -91,7 +90,7 @@ button:hover {
   }
 
   button {
-    margin: 5px 0; /* Ajustar margen entre botones */
+    margin: 5px 0; /* Ajustar el margen entre botones */
     font-family: 'Merriweather', serif; /* Cambiar la fuente a Merriweather */
   }
 }

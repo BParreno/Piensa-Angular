@@ -1,6 +1,7 @@
+/* Clase CSS para la imagen del logo */
 .logo {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+  max-width: 100%; /* La imagen no excederá el 100% del ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  margin-bottom: 10px; /* Espacio inferior para separar la imagen del contenido siguiente */
   max-height: 90%; /* Ajustar la altura máxima del logo */
 }
