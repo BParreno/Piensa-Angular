@@ -1,0 +1,11 @@
+.Triangles {
+    position: fixed;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1; /* Asegúrate de que el fondo está detrás de todo */
+}
+
+.card {
+    z-index: 1; /* Asegúrate de que las cards están por encima del fondo */
+    position: relative; /* Necesario para que z-index funcione */
+}

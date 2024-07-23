@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f5f5f5;
 }
 
 /* Estilo de la tarjeta */
@@ -21,6 +20,7 @@
   flex-direction: column;
   position: relative;
   overflow: hidden; /* Asegurarse de que las imágenes no se desborden */
+  z-index: 2; /* Asegurarse de que la card está por encima del contenedor */
 }
 
 /* Encabezado que contiene los corazones y el botón de regreso */
